@@ -1,0 +1,34 @@
+[
+  {
+    "nombre": "WhatsApp MOD",
+    "descripcion": "Privacidad total, sin límites de envío.",
+    "icono": "iconos/whatsapp.png",
+    "categoria": "apps",
+    "ruta": "apps/whatsapp-mod.html",
+    "etiquetas": ["mod", "privacidad", "mensajería"]
+  },
+  {
+    "nombre": "Instagram Lite MOD",
+    "descripcion": "Sin publicidad, con descarga de contenido.",
+    "icono": "iconos/instagram.png",
+    "categoria": "apps",
+    "ruta": "apps/instagram-lite.html",
+    "etiquetas": ["mod", "lite", "sinPublicidad", "descarga"]
+  },
+  {
+    "nombre": "GTA Lite",
+    "descripcion": "Versión optimizada para Android, sin lag.",
+    "icono": "iconos/gta.png",
+    "categoria": "juegos",
+    "ruta": "juegos/gta-lite.html",
+    "etiquetas": ["lite", "juego", "acción"]
+  },
+  {
+    "nombre": "Free Fire MAX",
+    "descripcion": "Gráficos mejorados y rendimiento fluido.",
+    "icono": "iconos/freefire.png",
+    "categoria": "juegos",
+    "ruta": "juegos/freefire-max.html",
+    "etiquetas": ["battleRoyale", "gráficos", "multijugador"]
+  }
+]
