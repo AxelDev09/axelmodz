@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AXELMODZ</title>
+  <link rel="icon" href="iconos/favicon/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google AdSense Verification -->
+  <script data-ad-client="ca-pub-2759242099242164" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2759242099242164"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .verificado-icon {
+      vertical-align: middle;
+      margin-left: 6px;
+      width: 16px;
+      height: 16px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Pantalla de carga -->
+  <div id="loader">
+    <h1>AXELMODZ</h1>
+    <div class="glow">Sitio activo</div>
+  </div>
+
+  <!-- Dashboard -->
+  <div id="dashboard">
+    <header>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <h1>
+            AXELMODZ | Dashboard
+            <svg class="verificado-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0f0">
+              <path d="M9 16.2l-3.5-3.5 1.4-1.4L9 13.4l7.1-7.1 1.4 1.4z"/>
+            </svg>
+          </h1>
+          <p>Panel de control de apps y herramientas</p>
+        </div>
+        <div id="menu-toggle" style="cursor: pointer; font-size: 2em;">⋮</div>
+      </div>
+      <div id="menu-dropdown" style="display: none; margin-top: 10px;">
+        <button onclick="filtrarCategoria('apps')">📱 Apps</button>
+        <button onclick="filtrarCategoria('juegos')">🎮 Juegos</button>
+        <button onclick="window.location.href='contacto.html'">📞 Contacto</button>
+      </div>
+    </header>
+
+    <!-- Buscador -->
+    <div id="search">
+      <input type="text" id="searchInput" placeholder="Buscar app o etiqueta...">
+    </div>
+
+    <!-- Tarjetas generadas dinámicamente -->
+    <div class="dashboard-grid" id="appGrid"></div>
+  </div>
+
+  <!-- Script -->
+  <script src="buscador.js"></script>
+</body>
+</html>
