@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AXELMODZ</title>
+
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Panel de control de apps y herramientas modificado por AXELMODZ.">
+  <link rel="canonical" href="https://axelmodz.xyz/">
+
+  <link rel="icon" href="iconos/favicon/logo.png" type="image/png">
+  <link rel="shortcut icon" href="iconos/favicon/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="iconos/favicon/logo.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script data-ad-client="ca-pub-2759242099242164" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2759242099242164"
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <div id="loader">
+    <h1>AXELMODZ</h1>
+    <div class="glow">BIENVENIDO</div>
+  </div>
+
+  <div id="dashboard">
+    <header>
+      <div class="header-container">
+        <div>
+          <h1>
+            AXELMODZ | Dashboard
+            <svg class="verificado-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0f0">
+              <path d="M9 16.2l-3.5-3.5 1.4-1.4L9 13.4l7.1-7.1 1.4 1.4z"/>
+            </svg>
+          </h1>
+          <p>Panel de control de apps y herramientas</p>
+        </div>
+        <div id="menu-toggle">⋮</div>
+      </div>
+      
+      <div id="menu-dropdown" style="display: none;">
+        <button onclick="filtrarCategoria('apps')">📱 APPS</button>
+        <button onclick="filtrarCategoria('juegos')">🎮 JUEGOS</button>
+        <button onclick="window.location.href='contacto.html'">📞 CONTACTO</button>
+      </div>
+    </header>
+
+    <div id="etiquetaInfo" style="margin: 10px 0; font-weight: bold; color: #0f0;"></div>
+
+    <div id="search">
+      <input type="text" id="searchInput" placeholder="Buscar app... 🔎">
+    </div>
+
+    <div class="dashboard-grid" id="appGrid"></div>
+  </div>
+
+  <script src="buscador.js"></script>
+
+</body>
+</html>

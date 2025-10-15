@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | AXELMODZ</title>
+
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Contacta con AXELMODZ para dudas, sugerencias o colaboraciones.">
+  <link rel="canonical" href="https://axelmodz.xyz/contacto.html">
+
+  <link rel="icon" href="iconos/favicon/logo.png" type="image/png">
+  <link rel="shortcut icon" href="iconos/favicon/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="iconos/favicon/logo.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-page">
+    <h1><span style="font-size: 1.5em; vertical-align: middle;">📞</span> Contacto</h1>
+    <p>¿Tienes dudas, sugerencias o quieres colaborar?</p>
+
+    <div class="contact-links">
+      <div class="contact-item">
+        <span class="contact-icon">📧</span>
+        <span id="emailText">axelmodz@gmail.com</span>
+        <button class="copy-btn" onclick="copyEmail()">Copiar</button>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📷</span>
+        <a href="https://instagram.com/axelmodz" target="_blank" rel="noopener noreferrer">@axel.modz</a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">✈️</span>
+        <a href="https://t.me/axelmodz" target="_blank" rel="noopener noreferrer">@axelmodz</a>
+      </div>
+    </div>
+
+    <a href="index.html" class="back-link">← VOLVER AL DASHBOARD</a>
+  </div>
+
+  <script>
+    function copyEmail() {
+      const emailText = document.getElementById('emailText').innerText;
+      const copyBtn = document.querySelector('.copy-btn');
+      
+      navigator.clipboard.writeText(emailText).then(() => {
+        // Feedback visual para el usuario
+        copyBtn.innerText = 'Copiado ✅';
+        copyBtn.style.background = '#0a0';
+        copyBtn.style.color = '#000';
+        
+        // Volver al estado original después de 2 segundos
+        setTimeout(() => {
+          copyBtn.innerText = 'Copiar';
+          copyBtn.style.background = '#111';
+          copyBtn.style.color = '#0f0';
+        }, 2000);
+      }).catch(err => {
+        console.error('Error al copiar el texto: ', err);
+      });
+    }
+  </script>
+</body>
+</html>
